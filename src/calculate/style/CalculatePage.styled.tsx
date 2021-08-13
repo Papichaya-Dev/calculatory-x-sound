@@ -5,7 +5,7 @@ export const Container_CalculatorPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("https://cdna.artstation.com/p/assets/images/images/023/099/382/original/paul-ferrin-80-s-style-animation-render-gif.gif?1578078098");
+  background-image: url("https://news.crunchbase.com/wp-content/uploads/2017/07/giphy-1-1.gif");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -22,8 +22,10 @@ export const Calculator_Button = styled.button`
   height: 50px;
   margin-left: 5px;
   margin-top: 5px;
-  font-weight: bold;
+  font-weight: 600;
   background-color: #b4daf0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
 `;
 
 export const Digit_Box = styled.div`
@@ -40,13 +42,13 @@ export const Digit_Box = styled.div`
   padding: 10px;
   justify-content: flex-end;
   justify-items: center;
+  background-color: #ffffff7f;
+  opacity: 0.8;
 `;
 
 export const Operator_Symbol = styled.div`
-  font-family: "Bungee Shade", cursive;
-  font-size: 30px;
-  color: white;
-  margin-top: 35px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
   margin-left: 10px;
 `;
 export const rainbow = keyframes`
@@ -68,4 +70,12 @@ export const Rainbow_Header = styled.div`
   background-clip: text;
   color: transparent;
   animation: 2s linear 0s infinite normal none running ${rainbow};
+`;
+
+export const Created_Footer = styled.footer`
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  bottom: 3%;
 `;

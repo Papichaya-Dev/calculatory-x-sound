@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import { Row } from "react-bootstrap";
 import useCalculator from "./useCalculate";
-import { Container_CalculatorPage, Rainbow_Header, Digit_Box, Number_Of_Input, Operator_Symbol, Calculator_Button } from "./style/CalculatePage.styled";
+import { Container_CalculatorPage, Rainbow_Header, Digit_Box, Number_Of_Input, Operator_Symbol, Calculator_Button, Created_Footer } from "./style/CalculatePage.styled";
 
 function CalculatePage() {
   const { setCalculationValue, setOperator, getCurrentDisplayText, deletePrevNumber, clearDisplayText, onCalculate, getOperator } = useCalculator();
@@ -42,11 +42,12 @@ function CalculatePage() {
         <Calculator_Button onClick={setCalculationValue.bind(null, 0)}>0</Calculator_Button>
         <Calculator_Button onClick={clearDisplayText}>C</Calculator_Button>
         <Calculator_Button onClick={deletePrevNumber}>{"<-"}</Calculator_Button>
-        <Calculator_Button onClick={setOperator.bind(null, "/")}>÷</Calculator_Button>
+        <Calculator_Button onClick={setOperator.bind(null, "÷")}>÷</Calculator_Button>
       </Row>
       <Row className="justify-content-md-center">
         <Calculator_Button onClick={onCalculate}>=</Calculator_Button>
       </Row>
+      <Created_Footer>created by Papichaya-Dev</Created_Footer>
     </Container_CalculatorPage>
   );
 }

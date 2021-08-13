@@ -3,7 +3,7 @@ import sound_click_path from "./sound/sound_click.wav";
 import useSound from "use-sound";
 import sound_operator_path from "./sound/sound_operator.wav";
 import sound_total_path from "./sound/sound_total.wav";
-type TOperator = "+" | "-" | "*" | "/";
+type TOperator = "+" | "-" | "*" | "÷";
 
 interface IState {
   value: number;
@@ -119,7 +119,7 @@ const useCalculator = () => {
       let result = previous_value * currentValue;
       console.log(result);
       setTotal(result);
-    } else if (operator === "/") {
+    } else if (operator === "÷") {
       let result = previous_value / currentValue;
       console.log(result);
       setTotal(result);
