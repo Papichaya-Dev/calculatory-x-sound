@@ -9,6 +9,4 @@ Calculatory V.1
 - Sound buttons
 
 ## :link: Preview
-<div style="text-align: center">
-  <img src="https://media.giphy.com/media/YclfToxIS4ZvaiHVcZ/giphy.gif" border="0" />
-</div>
+![Screenshot](https://github.com/Papichaya-Dev/calculatory-x-sound/blob/main/calculator.gif)
